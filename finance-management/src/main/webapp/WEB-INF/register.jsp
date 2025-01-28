@@ -7,7 +7,6 @@
 <body>
     <h1>Register User</h1>
     <form action="user" method="post">
-        <input type="hidden" name="action" value="register">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
         <label for="password">Password:</label>

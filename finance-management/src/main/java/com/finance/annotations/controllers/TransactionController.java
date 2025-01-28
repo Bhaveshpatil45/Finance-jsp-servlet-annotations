@@ -14,8 +14,19 @@ public class TransactionController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String description = request.getParameter("description");
-        String amount = request.getParameter("amount");
-        transactionService.createTransaction(new Transaction(description, Double.parseDouble(amount)));
-        response.sendRedirect("dashboard.jsp");
+        String amountStr = request.getParameter("amount");
+
+        if (description == null || description.isEmpty() || amountStr == null || amountStr.isEmpty()) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid input data");
+            return;
+        }
+
+        try {
+            double amount = Double.parseDouble(amountStr);
+            transactionService.createTransaction(new Transaction(description, amount));
+            response.sendRedirect("dashboard.jsp");
+        } catch (NumberFormatException e) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Amount must be a valid number");
+        }
     }
 }

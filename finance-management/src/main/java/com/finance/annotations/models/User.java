@@ -5,12 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private String username;
+    private String password;
     private double balance;
-
-    public User(String username, double balance) {
-        this.username = username;
-        this.balance = balance;
-    }
 }
