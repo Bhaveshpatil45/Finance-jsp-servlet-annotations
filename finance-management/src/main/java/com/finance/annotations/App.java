@@ -1,13 +1,10 @@
 package com.finance.annotations;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/init")
+public class PersonalFinanceApplication extends HttpServlet {
+    // Application initialization logic can go here if needed
 }
+
