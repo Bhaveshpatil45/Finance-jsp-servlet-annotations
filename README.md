@@ -18,39 +18,6 @@ MVC architecture for clean separation of concerns.
 
 Styled with basic CSS for a clean user interface.
 
-Project Structure
-
-personal-finance/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── finance/
-│   │   │           ├── controllers/
-│   │   │           │   ├── UserController.java
-│   │   │           │   └── TransactionController.java
-│   │   │           ├── models/
-│   │   │           │   ├── User.java
-│   │   │           │   └── Transaction.java
-│   │   │           ├── repositories/
-│   │   │           │   ├── UserRepository.java
-│   │   │           │   └── TransactionRepository.java
-│   │   │           ├── services/
-│   │   │           │   ├── UserService.java
-│   │   │           │   └── TransactionService.java
-│   │   │           └── PersonalFinanceApplication.java
-│   │   ├── webapp/
-│   │       ├── WEB-INF/
-│   │       │   └── web.xml
-│   │       ├── index.jsp
-│   │       ├── register.jsp
-│   │       ├── dashboard.jsp
-│   │       ├── css/
-│   │       │   └── styles.css
-│   │       └── js/
-│   │           └── scripts.js
-├── pom.xml
-
 
 Technologies Used
 
