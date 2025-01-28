@@ -51,6 +51,7 @@ personal-finance/
 │   │           └── scripts.js
 ├── pom.xml
 
+
 Technologies Used
 
 Java: Backend logic.
@@ -86,24 +87,6 @@ Deploy to Tomcat:
 Copy the generated WAR file (found in the target/ directory) to the webapps/ directory of your Tomcat server.
 
 Start the Tomcat server.
-
-Access the Application:
-Open a browser and navigate to:
-
-http://localhost:8080/personal-finance
-
-Screenshots
-
-Home Page
-
-
-
-Registration Page
-
-
-
-Dashboard
-
 
 
 Contributing
